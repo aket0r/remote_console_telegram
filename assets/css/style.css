@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#registration-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#registration-container h2 {
+    font-size: 27px;
+}
+
+#registration-container input,
+#registration-container button {
+    display: block;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #888;
+    padding: 15px;
+    font-size: 24px;
+    margin: 20px 0;
+    min-width: 600px;
+    outline: none;
+    font-family: monospace;
+}
+#registration-container button {
+    cursor: pointer;
+    background-color: #444;
+}
+
+#title {
+    padding: 15px 10px;
+    color: #777;
+}
+
+#command {
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    font-size: 19px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-top: 1px solid #ddd;
+    color: #ddd;
+    padding: 5px;
+    font-family: monospace;
+}
+
+
+section#main {
+    width: 100%;
+    height: 100%;
+    min-height: calc(95vh - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section#main #container {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+section#main #item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+section#main #item:first-child {
+    border-top: 1px solid #ddd;
+}
+section#main #item span.date {
+    position: absolute;
+    right: 10px;
+}
+
+section#main #item span#user {
+    color: #888;
+}
+
+section#main #item h2 {
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+section#main #item pre {
+    margin-top: 25px;
+    overflow-x: auto;
+}
+section#main #item pre.error {
+    color: crimson;
+}
