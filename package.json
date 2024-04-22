@@ -1,0 +1,23 @@
+{
+  "name": "dev_console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . console --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/cmd.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Remote console access\""
+  },
+  "author": "RikoDiGray",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron": "^26.2.1",
+    "electron-packager": "^17.1.2",
+    "fs": "^0.0.1-security",
+    "md5": "^2.3.0",
+    "node-telegram-bot-api": "^0.63.0",
+    "os": "^0.1.2",
+    "requests": "^0.3.0",
+    "url": "^0.11.2"
+  }
+}
