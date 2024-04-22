@@ -1,6 +1,8 @@
 # Windows CMD Remote Access by Telegram API
 This application will allow you to send cmd commands via Telegram
 <br>
+Here is a [tutorial](https://github.com/hosein2398/node-telegram-bot-api-tutorial) to get Telegram token and Chat_id
+<br>
 <br>
 <br>
 > [!IMPORTANT]
@@ -33,5 +35,5 @@ npm i electron --save
 
 > [!NOTE]
 > **Step 3** <br>
-> Go in **release-builds** AND run app "console.exe"
+> Go in **release-builds/console-win32-ia32/** AND run app "console.exe"
 
