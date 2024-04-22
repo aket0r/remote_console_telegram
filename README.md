@@ -28,7 +28,7 @@ npm i electron --save
 
 > [!WARNING]
 > **Step 2.5** <br>
-> Copy "assets" in **release-builds**
+> Copy "assets" in **release-builds/console-win32-ia32/**
 
 
 > [!NOTE]
