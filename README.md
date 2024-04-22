@@ -8,6 +8,7 @@ This application will allow you to send cmd commands via Telegram
 > Enter each command in turn into the console (cmd), opening it in the application folder **or** run *require.cmd*
 
 ```
+npm init (Hold Enter in cmd to skip actions)
 npm i fs
 npm i path
 npm i url
