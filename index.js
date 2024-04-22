@@ -58,14 +58,14 @@ function createWindow() {
             protocol: 'file:',
             slashes: true,
         }));
-        // win.removeMenu();
+        win.removeMenu();
 
 
         win.maximize();
         app.focus();
         isTray = true;
         appStatus = true;
-        win.webContents.openDevTools();
+        // win.webContents.openDevTools();
 
         win.on('closed', () => {
             win = null;
