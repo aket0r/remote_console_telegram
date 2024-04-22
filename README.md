@@ -1,7 +1,7 @@
 # Windows CMD Remote Access by Telegram API
 This application will allow you to send cmd commands via Telegram
 <br>
-Here is a [tutorial](https://github.com/hosein2398/node-telegram-bot-api-tutorial) to get Telegram token and Chat_id
+Here is a [tutorial](https://github.com/hosein2398/node-telegram-bot-api-tutorial) to get Telegram token and [Chat_id](https://www.wikihow.com/Know-Chat-ID-on-Telegram-on-Android#:~:text=Find%20your%20personal%20chat%20ID,is%20your%20Telegram%20chat%20ID)
 <br>
 <br>
 <br>
