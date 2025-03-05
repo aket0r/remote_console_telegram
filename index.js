@@ -58,14 +58,14 @@ function createWindow() {
             protocol: 'file:',
             slashes: true,
         }));
-        win.removeMenu();
+        // win.removeMenu();
 
 
         win.maximize();
         app.focus();
         isTray = true;
         appStatus = true;
-        // win.webContents.openDevTools();
+        win.webContents.openDevTools();
 
         win.on('closed', () => {
             win = null;
@@ -122,7 +122,8 @@ function load() {
         });
     }
 
-    async function sendProccess(command, chat_id) {
+    async function sendProcess(command, chat_id) {
+        console.log(`sendProcess.function: ${command}`);
         child_process.exec(`chcp 65001 && ${command}`, async (err, stdout, stderr) => {
             if (err) {
                 resultOfCommand = stderr;
@@ -160,12 +161,13 @@ function load() {
     }
 
     function start(command, id) {
-        if(command.indexOf("shutdown") > -1 || command == 'N' || command == 'Y') {
+        console.log(command);
+        if(command.includes("shutdown") || command == 'N' || command == 'Y') {
             if(unsafeCommandValue != null && command == 'Y') {
-                unsafeCommandValue = null;
-                sendProccess(command, id);
+                sendProcess(unsafeCommandValue, id);
                 return;
             } else if(unsafeCommandValue != null && command == 'N') {
+                unsafeCommandValue = null;
                 sendMessage("The command has been cancelled.");
                 return;
             } else {
@@ -174,7 +176,7 @@ function load() {
                 return;
             }
         } else{
-            sendProccess(command, id);
+            sendProcess(command, id);
         }
     }
 
